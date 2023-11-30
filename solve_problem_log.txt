@@ -1,0 +1,531 @@
+
+Starting CP-SAT solver v9.7.2996
+Parameters: log_search_progress: true num_search_workers: 8
+
+Initial optimization model '': (model_fingerprint: 0xcac125081db427bf)
+#Variables: 158 (#ints: 6 in objective)
+  - 120 Booleans in [0,1]
+  - 13 in [0,4320]
+  - 13 in [0,6116]
+  - 6 in [0,26421120]
+  - 3 in [70,150]
+  - 3 in [80,150]
+#kBoolOr: 30 (#literals: 120)
+#kIntDiv: 12
+#kIntProd: 6
+#kLinMax: 2 (#expressions: 12)
+#kLinear2: 12
+#kLinear3: 120 (#enforced: 120)
+
+Starting presolve at 0.00s
+[ExtractEncodingFromLinear] #potential_supersets=0 #potential_subsets=0 #at_most_one_encodings=0 #exactly_one_encodings=0 #unique_terms=0 #multiple_terms=0 #literals=0 time=1.51e-06s
+[SAT presolve] num removable Booleans: 60 / 158
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] [0s] clauses:30 literals:120 vars:60 one_side_vars:60 simple_definition:0 singleton_clauses:0
+[SAT presolve] [3.3499e-05s] clauses:15 literals:60 vars:60 one_side_vars:60 simple_definition:0 singleton_clauses:0
+[SAT presolve] [4.5003e-05s] clauses:15 literals:60 vars:60 one_side_vars:60 simple_definition:0 singleton_clauses:0
+[Probing] implications and bool_or (work_done=630).
+[DetectDuplicateConstraints] #duplicates=0 #without_enforcements=0 time=0.000300397s
+[DetectDominatedLinearConstraints] #relevant_constraints=24 #work_done=144 #num_inclusions=0 #num_redundant=0 time=9.146e-06s
+[ProcessSetPPC] #relevant_constraints=15 #num_inclusions=0 work=180 time=6.8838e-05s
+[FindBigHorizontalLinearOverlap] #blocks=0 #saved_nz=0 #linears=0 #work_done=0/1e+09 time=1.167e-06s
+[FindBigVerticalLinearOverlap] #blocks=0 #nz_reduction=0 #work_done=1838 time=2.4395e-05s
+[MergeClauses] #num_collisions=0 #num_merges=0 #num_saved_literals=0 work=60/100000000 time=1.0302e-05s
+[SAT presolve] num removable Booleans: 60 / 158
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] [0s] clauses:15 literals:60 vars:60 one_side_vars:60 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.599e-05s] clauses:15 literals:60 vars:60 one_side_vars:60 simple_definition:0 singleton_clauses:0
+[SAT presolve] [3.5577e-05s] clauses:15 literals:60 vars:60 one_side_vars:60 simple_definition:0 singleton_clauses:0
+[Probing] implications and bool_or (work_done=630).
+[DetectDuplicateConstraints] #duplicates=0 #without_enforcements=0 time=0.000301674s
+[DetectDominatedLinearConstraints] #relevant_constraints=24 #work_done=144 #num_inclusions=0 #num_redundant=0 time=8.471e-06s
+[ProcessSetPPC] #relevant_constraints=15 #num_inclusions=0 work=180 time=6.0731e-05s
+[FindBigHorizontalLinearOverlap] #blocks=0 #saved_nz=0 #linears=0 #work_done=0/1e+09 time=1.016e-06s
+[FindBigVerticalLinearOverlap] #blocks=0 #nz_reduction=0 #work_done=1838 time=2.0044e-05s
+[MergeClauses] #num_collisions=0 #num_merges=0 #num_saved_literals=0 work=60/100000000 time=9.353e-06s
+[ExpandObjective] #propagations=0 #entries=0 #tight_variables=0 #tight_constraints=0 #expands=0 #issues=0 time=0.000283043s
+
+Presolve summary:
+  - 60 affine relations were detected.
+  - rule 'TODO dual: only one blocking constraint?' was applied 490 times.
+  - rule 'TODO dual: only one blocking enforced constraint?' was applied 420 times.
+  - rule 'TODO lin_max: linear expression above max.' was applied 96 times.
+  - rule 'affine: new relation' was applied 60 times.
+  - rule 'deductions: 276 stored' was applied 1 time.
+  - rule 'dual: equivalent Boolean in near-duplicate constraints' was applied 60 times.
+  - rule 'int_div: linearize positive division with a constant divisor' was applied 12 times.
+  - rule 'int_div: updated domain of target in target = X / cte' was applied 12 times.
+  - rule 'int_prod: reduced target domain.' was applied 6 times.
+  - rule 'lin_max: target domain reduced' was applied 2 times.
+  - rule 'linear: divide by GCD' was applied 7 times.
+  - rule 'linear: reduced variable domains' was applied 12 times.
+  - rule 'linear: simplified rhs' was applied 132 times.
+  - rule 'presolve: 0 unused variables removed.' was applied 1 time.
+  - rule 'presolve: iteration' was applied 2 times.
+
+Presolved optimization model '': (model_fingerprint: 0xbdd680ef3c923079)
+#Variables: 98 (#ints: 6 in objective)
+  - 60 Booleans in [0,1]
+  - 1 in [0,2596]
+  - 1 in [0,2620]
+  - 1 in [0,2639]
+  - 1 in [0,3528]
+  - 1 in [0,3597]
+  - 1 in [0,3610]
+  - 1 in [0,3730]
+  - 1 in [0,3816]
+  - 1 in [0,3872]
+  - 1 in [0,4344]
+  - 1 in [0,5430]
+  - 1 in [0,5444]
+  - 3 in [70,150]
+  - 3 in [80,150]
+  - 1 in [448][454][460][467][473][480][486][492][ ... 902][908][915][921][928][934][940][947][953][960]
+  - 1 in [504][511][519][526][533][540][547][555][ ... ][1031][1038][1045][1052][1059][1067][1074][1081]
+  - 1 in [672][682][691][701][711][720][730][739][ ... ][1374][1383][1393][1403][1412][1422][1431][1441]
+  - 1 in [686][695][705][715][725][735][744][754][ ... ][1401][1411][1421][1430][1440][1450][1460][1470]
+  - 1 in [792][803][815][826][837][849][860][871][ ... ][1618][1630][1641][1652][1664][1675][1686][1698]
+  - 1 in [1681][1702][1723][1744][1765][1786][1807 ... ][3005][3026][3047][3068][3089][3110][3131][3153]
+  - 1 in [1700][1722][1743][1764][1785][1807][1828 ... ][3040][3061][3082][3103][3125][3146][3167][3189]
+  - 1 in [1724][1746][1767][1789][1811][1832][1854 ... ][3083][3104][3126][3147][3169][3190][3212][3234]
+  - 1 in [1724,4320]
+  - 1 in [1772][1797][1823][1848][1873][1899][1924 ... ][3620][3646][3671][3696][3722][3747][3772][3798]
+  - 1 in [2386][2416][2446][2475][2505][2535][2565 ... ][4265][4295][4325][4355][4385][4414][4444][4474]
+  - 1 in [2506][2537][2569][2600][2631][2663][2694 ... ][4480][4511][4542][4574][4605][4636][4668][4699]
+  - 1 in [2519][2550][2582][2613][2645][2676][2708 ... ][4503][4534][4566][4597][4629][4660][4692][4723]
+  - 1 in [2519,6116]
+  - 1 in [301056][305088][305536][309120][309568][ ... 743][1364627][1365120][1373273][1373760][1383360]
+  - 1 in [543312][550440][550858][558085][558360][ ... 560][2462100][2462250][2478420][2479080][2496060]
+  - 1 in [893088][905492][905688][918267][918792][ ... 507][4051128][4052466][4077532][4079052][4105638]
+  - 1 in [4113464][4165184][4165956][4216062][4216 ... 14274128][14274876][14370488][14371896][14468916]
+  - 1 in [4234439][4286550][4287338][4340100][4340 ... 14690652][14692980][14787713][14793876][14891619]
+  - 1 in [4260200][4312900][4315332][4367300][4367 ... 14783556][14784204][14881733][14886252][14985111]
+#kBoolOr: 15 (#literals: 60)
+#kIntProd: 6
+#kLinMax: 2 (#expressions: 12)
+#kLinear2: 24
+#kLinear3: 60 (#enforced: 60)
+
+Preloading model.
+#Bound   0.05s best:inf   next:[-25909584,12075561] initial_domain
+#Model   0.06s var:98/98 constraints:107/107
+
+Starting search at 0.06s with 8 workers.
+6 full problem subsolvers: [core, default_lp, max_lp, no_lp, pseudo_costs, reduced_costs]
+1 first solution subsolver: [jump]
+8 incomplete subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, rins/rens, rnd_cst_lns, rnd_var_lns]
+3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+#1       0.06s best:12075561 next:[-25909584,12075560] no_lp fixed_bools:0/71
+#Bound   0.06s best:12075561 next:[-25354165,12075560] max_lp initial_propagation
+#2       0.06s best:12060788 next:[-25354165,12060787] no_lp fixed_bools:0/81
+#3       0.06s best:12044298 next:[-25354165,12044297] no_lp fixed_bools:0/92
+#4       0.06s best:12028283 next:[-25354165,12028282] no_lp fixed_bools:0/103
+#Bound   0.06s best:12028283 next:[-23559987,12028282] reduced_costs
+#5       0.06s best:12012048 next:[-23559987,12012047] no_lp fixed_bools:0/114
+#6       0.06s best:11994858 next:[-23559987,11994857] no_lp fixed_bools:0/125
+#7       0.06s best:11979033 next:[-23559987,11979032] no_lp fixed_bools:0/135
+#8       0.06s best:11962139 next:[-23559987,11962138] no_lp fixed_bools:0/146
+#9       0.06s best:11945025 next:[-23559987,11945024] no_lp fixed_bools:0/157
+#10      0.07s best:11926917 next:[-23559987,11926916] no_lp fixed_bools:0/168
+#11      0.07s best:11909353 next:[-23559987,11909352] no_lp fixed_bools:0/179
+#12      0.07s best:10859564 next:[-23559987,10859563] default_lp fixed_bools:0/99
+#Bound   0.07s best:10859564 next:[-21843181,10859563] reduced_costs
+#13      0.07s best:10859189 next:[-21843181,10859188] no_lp fixed_bools:0/239
+#14      0.07s best:10831245 next:[-21843181,10831244] no_lp fixed_bools:0/240
+#15      0.07s best:10803081 next:[-21843181,10803080] no_lp fixed_bools:0/241
+#16      0.07s best:10773433 next:[-21843181,10773432] no_lp fixed_bools:0/242
+#17      0.07s best:10744819 next:[-21843181,10744818] no_lp fixed_bools:0/243
+#18      0.07s best:10717467 next:[-21843181,10717466] no_lp fixed_bools:0/244
+#19      0.07s best:10687131 next:[-21843181,10687130] no_lp fixed_bools:0/245
+#20      0.07s best:10657858 next:[-21843181,10657857] no_lp fixed_bools:0/246
+#21      0.07s best:10628365 next:[-21843181,10628364] no_lp fixed_bools:0/247
+#22      0.07s best:10597329 next:[-21843181,10597328] no_lp fixed_bools:0/248
+#23      0.07s best:10568925 next:[-21843181,10568924] no_lp fixed_bools:0/249
+#24      0.07s best:10538773 next:[-21843181,10538772] no_lp fixed_bools:0/250
+#25      0.07s best:10507049 next:[-21843181,10507048] no_lp fixed_bools:0/251
+#26      0.07s best:10476447 next:[-21843181,10476446] no_lp fixed_bools:0/252
+#27      0.07s best:10445625 next:[-21843181,10445624] no_lp fixed_bools:0/253
+#28      0.07s best:10414797 next:[-21843181,10414796] no_lp fixed_bools:0/254
+#29      0.07s best:8931995 next:[-21843181,8931994] default_lp fixed_bools:0/141
+#30      0.07s best:8923765 next:[-21843181,8923764] default_lp fixed_bools:0/146
+#Bound   0.07s best:8923765 next:[-19499870,8923764] reduced_costs
+#31      0.07s best:8805019 next:[-19499870,8805018] default_lp fixed_bools:0/156
+#32      0.08s best:8696505 next:[-19499870,8696504] default_lp fixed_bools:2/158
+#33      0.08s best:8587452 next:[-19499870,8587451] default_lp fixed_bools:2/159
+#34      0.08s best:8585734 next:[-19499870,8585733] no_lp fixed_bools:0/542
+#35      0.08s best:8526412 next:[-19499870,8526411] default_lp fixed_bools:2/161
+#36      0.08s best:8461043 next:[-19499870,8461042] no_lp fixed_bools:0/565
+#37      0.08s best:8409347 next:[-19499870,8409346] default_lp fixed_bools:2/163
+#38      0.08s best:8335934 next:[-19499870,8335933] no_lp fixed_bools:0/587
+#Bound   0.08s best:8335934 next:[-19497370,8335933] reduced_costs
+#39      0.08s best:8211500 next:[-19497370,8211499] no_lp fixed_bools:0/609
+#40      0.08s best:8085764 next:[-19497370,8085763] no_lp fixed_bools:0/631
+#41      0.09s best:7953626 next:[-19497370,7953625] no_lp fixed_bools:0/654
+#42      0.09s best:7825234 next:[-19497370,7825233] no_lp fixed_bools:0/676
+#Bound   0.09s best:7825234 next:[-19376822,7825233] reduced_costs
+#43      0.09s best:7695540 next:[-19376822,7695539] no_lp fixed_bools:0/698
+#44      0.09s best:7672472 next:[-19376822,7672471] default_lp fixed_bools:2/178
+#45      0.09s best:7559286 next:[-19376822,7559285] no_lp fixed_bools:0/721
+#46      0.09s best:7426936 next:[-19376822,7426935] no_lp fixed_bools:0/724
+#47      0.09s best:7293284 next:[-19376822,7293283] no_lp fixed_bools:0/725
+#48      0.09s best:7158330 next:[-19376822,7158329] no_lp fixed_bools:0/726
+#49      0.09s best:7016606 next:[-19376822,7016605] no_lp fixed_bools:0/727
+#50      0.09s best:6878996 next:[-19376822,6878995] no_lp fixed_bools:0/728
+#51      0.09s best:6740084 next:[-19376822,6740083] no_lp fixed_bools:0/729
+#52      0.09s best:6597596 next:[-19376822,6597595] no_lp fixed_bools:0/730
+#53      0.09s best:6452676 next:[-19376822,6452675] no_lp fixed_bools:0/731
+#54      0.09s best:6309806 next:[-19376822,6309805] no_lp fixed_bools:0/732
+#55      0.09s best:6163296 next:[-19376822,6163295] no_lp fixed_bools:0/733
+#56      0.09s best:6017801 next:[-19376822,6017800] no_lp fixed_bools:0/734
+#57      0.09s best:5867496 next:[-19376822,5867495] no_lp fixed_bools:0/735
+#58      0.09s best:5716964 next:[-19376822,5716963] no_lp fixed_bools:0/736
+#59      0.09s best:5567511 next:[-19376822,5567510] no_lp fixed_bools:0/737
+#60      0.09s best:5416756 next:[-19376822,5416755] no_lp fixed_bools:0/738
+#61      0.09s best:5258600 next:[-19376822,5258599] no_lp fixed_bools:0/739
+#62      0.10s best:5105189 next:[-19376822,5105188] no_lp fixed_bools:0/740
+#63      0.10s best:4950476 next:[-19376822,4950475] no_lp fixed_bools:0/741
+#64      0.10s best:4791932 next:[-19376822,4791931] no_lp fixed_bools:0/741
+#65      0.10s best:4780564 next:[-19376822,4780563] no_lp fixed_bools:0/742
+#66      0.10s best:4768771 next:[-19376822,4768770] no_lp fixed_bools:0/746
+#Bound   0.10s best:4768771 next:[-18435347,4768770] reduced_costs
+#67      0.10s best:4757159 next:[-18435347,4757158] no_lp fixed_bools:0/753
+#68      0.10s best:4745427 next:[-18435347,4745426] no_lp fixed_bools:0/760
+#69      0.10s best:4733260 next:[-18435347,4733259] no_lp fixed_bools:0/768
+#70      0.10s best:4721284 next:[-18435347,4721283] no_lp fixed_bools:0/775
+#71      0.10s best:4708227 next:[-18435347,4708226] no_lp fixed_bools:0/783
+#72      0.10s best:4696647 next:[-18435347,4696646] no_lp fixed_bools:0/790
+#73      0.10s best:4684307 next:[-18435347,4684306] no_lp fixed_bools:0/797
+#74      0.10s best:4671516 next:[-18435347,4671515] no_lp fixed_bools:0/805
+#75      0.10s best:4658932 next:[-18435347,4658931] no_lp fixed_bools:0/812
+#76      0.10s best:4645219 next:[-18435347,4645218] no_lp fixed_bools:0/820
+#77      0.10s best:4467512 next:[-18435347,4467511] graph_var_lns(d=0.50 s=12 t=0.10 p=0.00 stall=0)
+#78      0.11s best:4453444 next:[-18435347,4453443] no_lp fixed_bools:0/911
+#79      0.11s best:4437763 next:[-18435347,4437762] no_lp fixed_bools:0/919
+#Bound   0.11s best:4437763 next:[-17024758,4437762] max_lp
+#80      0.11s best:4423879 next:[-17024758,4423878] no_lp fixed_bools:0/926
+#81      0.11s best:4409107 next:[-17024758,4409106] no_lp fixed_bools:0/933
+#82      0.11s best:4393033 next:[-17024758,4393032] no_lp fixed_bools:0/941
+#83      0.11s best:4378804 next:[-17024758,4378803] no_lp fixed_bools:0/948
+#84      0.11s best:4362467 next:[-17024758,4362466] no_lp fixed_bools:0/956
+#85      0.11s best:4348007 next:[-17024758,4348006] no_lp fixed_bools:0/963
+#86      0.11s best:4332627 next:[-17024758,4332626] no_lp fixed_bools:0/970
+#87      0.11s best:4315897 next:[-17024758,4315896] no_lp fixed_bools:0/978
+#88      0.11s best:4301092 next:[-17024758,4301091] no_lp fixed_bools:0/985
+#89      0.11s best:4284099 next:[-17024758,4284098] no_lp fixed_bools:0/993
+#90      0.11s best:4269063 next:[-17024758,4269062] no_lp fixed_bools:0/1000
+#91      0.11s best:4253075 next:[-17024758,4253074] no_lp fixed_bools:0/1007
+#92      0.11s best:4235689 next:[-17024758,4235688] no_lp fixed_bools:0/1015
+#93      0.11s best:4220308 next:[-17024758,4220307] no_lp fixed_bools:0/1022
+#94      0.11s best:4066057 next:[-17024758,4066056] rnd_var_lns(d=0.71 s=16 t=0.10 p=1.00 stall=1)
+#95      0.12s best:4049524 next:[-17024758,4049523] no_lp fixed_bools:0/1084
+#96      0.12s best:4030563 next:[-17024758,4030562] no_lp fixed_bools:0/1092
+#97      0.12s best:4012865 next:[-17024758,4012864] no_lp fixed_bools:0/1099
+#98      0.12s best:3995987 next:[-17024758,3995986] no_lp fixed_bools:0/1106
+#99      0.12s best:3976633 next:[-17024758,3976632] no_lp fixed_bools:0/1114
+#100     0.12s best:3959524 next:[-17024758,3959523] no_lp fixed_bools:0/1121
+#101     0.12s best:3939907 next:[-17024758,3939906] no_lp fixed_bools:0/1129
+#102     0.12s best:3907097 next:[-17024758,3907096] no_lp fixed_bools:0/1135
+#Bound   0.12s best:3907097 next:[-15880849,3907096] reduced_costs
+#103     0.12s best:3872597 next:[-15880849,3872596] no_lp fixed_bools:0/1148
+#104     0.13s best:3847418 next:[-15880849,3847417] no_lp fixed_bools:0/1174
+#Bound   0.13s best:3847418 next:[-15069162,3847417] reduced_costs
+#105     0.13s best:3819548 next:[-15069162,3819547] no_lp fixed_bools:0/1201
+#106     0.14s best:3793637 next:[-15069162,3793636] no_lp fixed_bools:0/1227
+#Bound   0.14s best:3793637 next:[-14450167,3793636] reduced_costs
+#107     0.14s best:3777476 next:[-14450167,3777475] default_lp fixed_bools:15/376
+#108     0.15s best:3767376 next:[-14450167,3767375] no_lp fixed_bools:0/1253
+#109     0.15s best:3739158 next:[-14450167,3739157] default_lp fixed_bools:15/383
+#110     0.15s best:3710758 next:[-14450167,3710757] default_lp fixed_bools:15/383
+#111     0.16s best:3679958 next:[-14450167,3679957] default_lp fixed_bools:15/383
+#Bound   0.16s best:3679958 next:[-13161418,3679957] reduced_costs
+#112     0.16s best:3650242 next:[-13161418,3650241] default_lp fixed_bools:15/386
+#113     0.16s best:3625907 next:[-13161418,3625906] default_lp fixed_bools:23/402
+#Bound   0.17s best:3625907 next:[-12764574,3625906] default_lp
+#Bound   0.17s best:3625907 next:[-11960033,3625906] reduced_costs
+#114     0.18s best:3606652 next:[-11960033,3606651] default_lp fixed_bools:35/435
+#Bound   0.18s best:3606652 next:[-11922274,3606651] max_lp
+#115     0.18s best:3599285 next:[-11922274,3599284] no_lp fixed_bools:0/1410
+#116     0.19s best:3568485 next:[-11922274,3568484] no_lp fixed_bools:0/1436
+#117     0.19s best:3538769 next:[-11922274,3538768] no_lp fixed_bools:0/1463
+#118     0.20s best:3509287 next:[-11922274,3509286] no_lp fixed_bools:0/1489
+#119     0.20s best:3479455 next:[-11922274,3479454] no_lp fixed_bools:0/1515
+#120     0.20s best:3474368 next:[-11922274,3474367] no_lp fixed_bools:0/1527
+#121     0.20s best:3455670 next:[-11922274,3455669] no_lp fixed_bools:0/1527
+#122     0.20s best:3406894 next:[-11922274,3406893] no_lp fixed_bools:0/1542
+#123     0.21s best:3356774 next:[-11922274,3356773] no_lp fixed_bools:0/1554
+#124     0.21s best:3303772 next:[-11922274,3303771] no_lp fixed_bools:0/1555
+#125     0.21s best:3253914 next:[-11922274,3253913] no_lp fixed_bools:0/1556
+#126     0.21s best:3202690 next:[-11922274,3202689] no_lp fixed_bools:0/1557
+#127     0.21s best:3152125 next:[-11922274,3152124] no_lp fixed_bools:0/1557
+#128     0.21s best:3135635 next:[-11922274,3135634] no_lp fixed_bools:0/1557
+#129     0.21s best:3119620 next:[-11922274,3119619] no_lp fixed_bools:0/1557
+#130     0.21s best:3103385 next:[-11922274,3103384] no_lp fixed_bools:0/1557
+#131     0.21s best:3086195 next:[-11922274,3086194] no_lp fixed_bools:0/1557
+#132     0.21s best:3070370 next:[-11922274,3070369] no_lp fixed_bools:0/1557
+#133     0.22s best:3053476 next:[-11922274,3053475] no_lp fixed_bools:0/1557
+#Bound   0.22s best:3053476 next:[-11833100,3053475] pseudo_costs
+#134     0.22s best:3036362 next:[-11833100,3036361] no_lp fixed_bools:0/1557
+#135     0.22s best:3018254 next:[-11833100,3018253] no_lp fixed_bools:0/1557
+#136     0.22s best:3000690 next:[-11833100,3000689] no_lp fixed_bools:0/1557
+#137     0.22s best:2962616 next:[-11833100,2962615] default_lp fixed_bools:36/621
+#138     0.23s best:2953229 next:[-11833100,2953228] default_lp fixed_bools:36/625
+#139     0.23s best:2918045 next:[-11833100,2918044] default_lp fixed_bools:36/626
+#140     0.23s best:2883203 next:[-11833100,2883202] default_lp fixed_bools:36/627
+#141     0.23s best:2848011 next:[-11833100,2848010] default_lp fixed_bools:36/628
+#Bound   0.23s best:2848011 next:[-11814651,2848010] max_lp
+#142     0.23s best:2821473 next:[-11814651,2821472] no_lp fixed_bools:0/1571
+#143     0.24s best:2807764 next:[-11814651,2807763] no_lp fixed_bools:0/1601
+#Bound   0.25s best:2807764 next:[-11810976,2807763] reduced_costs
+#144     0.26s best:2793632 next:[-11810976,2793631] no_lp fixed_bools:0/1674
+#145     0.26s best:2770993 next:[-11810976,2770992] no_lp fixed_bools:0/1674
+#146     0.26s best:2725788 next:[-11810976,2725787] no_lp fixed_bools:0/1684
+#147     0.27s best:2680233 next:[-11810976,2680232] no_lp fixed_bools:0/1694
+#Bound   0.27s best:2680233 next:[-11761533,2680232] reduced_costs
+#148     0.27s best:2630133 next:[-11761533,2630132] no_lp fixed_bools:0/1705
+#149     0.27s best:2583846 next:[-11761533,2583845] no_lp fixed_bools:0/1715
+#150     0.27s best:2571769 next:[-11761533,2571768] default_lp fixed_bools:36/641
+#151     0.27s best:2537209 next:[-11761533,2537208] no_lp fixed_bools:0/1725
+#152     0.27s best:2489271 next:[-11761533,2489270] no_lp fixed_bools:0/1735
+#153     0.27s best:2441927 next:[-11761533,2441926] no_lp fixed_bools:0/1745
+#154     0.27s best:2390841 next:[-11761533,2390840] no_lp fixed_bools:0/1756
+#155     0.28s best:2341799 next:[-11761533,2341798] no_lp fixed_bools:0/1763
+#156     0.28s best:2336619 next:[-11761533,2336618] no_lp fixed_bools:0/1764
+#157     0.28s best:2328802 next:[-11761533,2328801] no_lp fixed_bools:0/1775
+#158     0.28s best:2310760 next:[-11761533,2310759] no_lp fixed_bools:0/1788
+#159     0.28s best:2304834 next:[-11761533,2304833] no_lp fixed_bools:0/1790
+#160     0.28s best:2296164 next:[-11761533,2296163] no_lp fixed_bools:0/1790
+#161     0.28s best:2288614 next:[-11761533,2288613] no_lp fixed_bools:0/1791
+#162     0.28s best:2281636 next:[-11761533,2281635] no_lp fixed_bools:0/1792
+#163     0.28s best:2271063 next:[-11761533,2271062] no_lp fixed_bools:0/1793
+#164     0.28s best:2263372 next:[-11761533,2263371] no_lp fixed_bools:0/1794
+#165     0.29s best:2254063 next:[-11761533,2254062] no_lp fixed_bools:0/1795
+#166     0.29s best:2243758 next:[-11761533,2243757] no_lp fixed_bools:0/1796
+#167     0.29s best:2235015 next:[-11761533,2235014] no_lp fixed_bools:0/1797
+#168     0.29s best:2223864 next:[-11761533,2223863] no_lp fixed_bools:0/1797
+#169     0.29s best:2213252 next:[-11761533,2213251] no_lp fixed_bools:0/1797
+#170     0.29s best:2202226 next:[-11761533,2202225] no_lp fixed_bools:0/1797
+#171     0.29s best:2191429 next:[-11761533,2191428] no_lp fixed_bools:0/1797
+#172     0.29s best:2179736 next:[-11761533,2179735] no_lp fixed_bools:0/1797
+#173     0.29s best:2170461 next:[-11761533,2170460] no_lp fixed_bools:0/1798
+#174     0.29s best:2155615 next:[-11761533,2155614] no_lp fixed_bools:0/1799
+#175     0.29s best:2144987 next:[-11761533,2144986] no_lp fixed_bools:0/1800
+#176     0.29s best:2131451 next:[-11761533,2131450] no_lp fixed_bools:0/1811
+#177     0.29s best:2117950 next:[-11761533,2117949] no_lp fixed_bools:0/1812
+#178     0.29s best:2115774 next:[-11761533,2115773] no_lp fixed_bools:0/1823
+#Bound   0.29s best:2115774 next:[-11755353,2115773] reduced_costs
+#179     0.30s best:2102466 next:[-11755353,2102465] no_lp fixed_bools:0/1833
+#180     0.30s best:2102185 next:[-11755353,2102184] no_lp fixed_bools:0/1835
+#181     0.30s best:2087160 next:[-11755353,2087159] no_lp fixed_bools:0/1835
+#182     0.30s best:2074833 next:[-11755353,2074832] no_lp fixed_bools:0/1835
+#183     0.30s best:2072336 next:[-11755353,2072335] no_lp fixed_bools:0/1846
+#184     0.30s best:2058297 next:[-11755353,2058296] no_lp fixed_bools:0/1856
+#185     0.30s best:2056619 next:[-11755353,2056618] no_lp fixed_bools:0/1858
+#186     0.30s best:2043063 next:[-11755353,2043062] no_lp fixed_bools:0/1858
+#187     0.30s best:2027126 next:[-11755353,2027125] no_lp fixed_bools:0/1858
+#188     0.30s best:2023191 next:[-11755353,2023190] no_lp fixed_bools:0/1869
+#189     0.31s best:2008822 next:[-11755353,2008821] no_lp fixed_bools:0/1881
+#190     0.31s best:1994787 next:[-11755353,1994786] no_lp fixed_bools:0/1881
+#191     0.31s best:1991242 next:[-11755353,1991241] no_lp fixed_bools:0/1883
+#192     0.31s best:1977827 next:[-11755353,1977826] no_lp fixed_bools:0/1883
+#193     0.31s best:1959518 next:[-11755353,1959517] no_lp fixed_bools:0/1884
+#194     0.31s best:1941864 next:[-11755353,1941863] no_lp fixed_bools:0/1885
+#195     0.31s best:1923198 next:[-11755353,1923197] no_lp fixed_bools:0/1886
+#196     0.31s best:1906083 next:[-11755353,1906082] no_lp fixed_bools:0/1887
+#197     0.31s best:1887406 next:[-11755353,1887405] no_lp fixed_bools:0/1888
+#198     0.31s best:1868716 next:[-11755353,1868715] no_lp fixed_bools:0/1889
+#199     0.31s best:1855925 next:[-11755353,1855924] no_lp fixed_bools:0/1892
+#200     0.31s best:1843341 next:[-11755353,1843340] no_lp fixed_bools:0/1892
+#201     0.31s best:1829628 next:[-11755353,1829627] no_lp fixed_bools:0/1892
+#202     0.31s best:1817472 next:[-11755353,1817471] no_lp fixed_bools:0/1892
+#203     0.31s best:1804524 next:[-11755353,1804523] no_lp fixed_bools:0/1892
+#204     0.31s best:1791109 next:[-11755353,1791108] no_lp fixed_bools:0/1893
+#205     0.31s best:1777917 next:[-11755353,1777916] no_lp fixed_bools:0/1894
+#206     0.32s best:1763548 next:[-11755353,1763547] no_lp fixed_bools:0/1897
+#207     0.32s best:1750816 next:[-11755353,1750815] no_lp fixed_bools:0/1897
+#208     0.32s best:1737260 next:[-11755353,1737259] no_lp fixed_bools:0/1897
+#209     0.32s best:1723221 next:[-11755353,1723220] no_lp fixed_bools:0/1897
+#210     0.32s best:1709421 next:[-11755353,1709420] no_lp fixed_bools:0/1897
+#211     0.32s best:1694396 next:[-11755353,1694395] no_lp fixed_bools:0/1897
+#212     0.32s best:1681088 next:[-11755353,1681087] no_lp fixed_bools:0/1897
+#213     0.32s best:1666924 next:[-11755353,1666923] no_lp fixed_bools:0/1897
+#214     0.32s best:1652261 next:[-11755353,1652260] no_lp fixed_bools:0/1897
+#Bound   0.32s best:1652261 next:[-11746372,1652260] reduced_costs
+#215     0.32s best:1637853 next:[-11746372,1637852] no_lp fixed_bools:0/1897
+#216     0.32s best:1622172 next:[-11746372,1622171] no_lp fixed_bools:0/1897
+#217     0.32s best:1608288 next:[-11746372,1608287] no_lp fixed_bools:0/1897
+#218     0.32s best:1593516 next:[-11746372,1593515] no_lp fixed_bools:0/1897
+#219     0.32s best:1577442 next:[-11746372,1577441] no_lp fixed_bools:0/1897
+#220     0.32s best:1563213 next:[-11746372,1563212] no_lp fixed_bools:0/1897
+#221     0.32s best:1546876 next:[-11746372,1546875] no_lp fixed_bools:0/1897
+#222     0.33s best:1532416 next:[-11746372,1532415] no_lp fixed_bools:0/1897
+#223     0.33s best:1517036 next:[-11746372,1517035] no_lp fixed_bools:0/1897
+#Bound   0.33s best:1517036 next:[-11680644,1517035] reduced_costs
+#224     0.33s best:1516236 next:[-11680644,1516235] no_lp fixed_bools:0/1899
+#225     0.33s best:1501431 next:[-11680644,1501430] no_lp fixed_bools:0/1899
+#226     0.34s best:1497938 next:[-11680644,1497937] no_lp fixed_bools:0/1900
+#227     0.35s best:1490320 next:[-11680644,1490319] no_lp fixed_bools:0/1905
+#Bound   0.35s best:1490320 next:[-11660127,1490319] reduced_costs
+#228     0.37s best:1479129 next:[-11660127,1479128] no_lp fixed_bools:0/1910
+#Bound   0.39s best:1479129 next:[-11508864,1479128] reduced_costs
+#Bound   0.40s best:1479129 next:[-11444785,1479128] pseudo_costs
+#229     0.40s best:1438556 next:[-11444785,1438555] no_lp fixed_bools:0/1916
+#230     0.40s best:1399853 next:[-11444785,1399852] no_lp fixed_bools:0/1917
+#231     0.40s best:1356902 next:[-11444785,1356901] no_lp fixed_bools:0/1918
+#232     0.40s best:1309772 next:[-11444785,1309771] no_lp fixed_bools:0/1919
+#233     0.41s best:1264533 next:[-11444785,1264532] no_lp fixed_bools:0/1920
+#Bound   0.42s best:1264533 next:[-11276770,1264532] reduced_costs
+#Bound   0.45s best:1264533 next:[-11251131,1264532] reduced_costs
+#Bound   0.50s best:1264533 next:[-10923762,1264532] no_lp
+#234     0.50s best:1264062 next:[-10923762,1264061] no_lp fixed_bools:6/1925
+#235     0.50s best:1256417 next:[-10923762,1256416] no_lp fixed_bools:6/1930
+#Bound   0.52s best:1256417 next:[-9996573,1256416] pseudo_costs
+#236     0.57s best:1247984 next:[-9996573,1247983] no_lp fixed_bools:6/2082
+#Bound   0.58s best:1247984 next:[-9737376,1247983] pseudo_costs
+#Bound   0.59s best:1247984 next:[-9497143,1247983] pseudo_costs
+#Bound   0.60s best:1247984 next:[-9370418,1247983] pseudo_costs
+#Bound   0.62s best:1247984 next:[-9335675,1247983] default_lp
+#Bound   0.63s best:1247984 next:[-9252786,1247983] reduced_costs
+#Bound   0.64s best:1247984 next:[-8918721,1247983] reduced_costs
+#237     0.65s best:1243923 next:[-8918721,1243922] no_lp fixed_bools:6/2118
+#Bound   0.66s best:1243923 next:[-8918564,1243922] reduced_costs
+#238     0.67s best:1219690 next:[-8918564,1219689] no_lp fixed_bools:6/2230
+#239     0.67s best:1205870 next:[-8918564,1205869] no_lp fixed_bools:6/2232
+#240     0.69s best:1156490 next:[-8918564,1156489] no_lp fixed_bools:6/2249
+#Bound   0.74s best:1156490 next:[-8917349,1156489] pseudo_costs
+#Bound   0.76s best:1156490 next:[-8577829,1156489] pseudo_costs
+#Bound   0.78s best:1156490 next:[-8472890,1156489] reduced_costs
+#Bound   0.81s best:1156490 next:[-8252669,1156489] pseudo_costs
+#Bound   0.82s best:1156490 next:[-8145771,1156489] reduced_costs
+#Bound   0.88s best:1156490 next:[-8123974,1156489] pseudo_costs
+#241     0.88s best:1154765 next:[-8123974,1154764] no_lp fixed_bools:7/2329
+#242     0.89s best:1154423 next:[-8123974,1154422] no_lp fixed_bools:7/2372
+#243     0.89s best:1113414 next:[-8123974,1113413] no_lp fixed_bools:7/2386
+#244     0.89s best:1101592 next:[-8123974,1101591] no_lp fixed_bools:7/2388
+#245     0.91s best:1045316 next:[-8123974,1045315] no_lp fixed_bools:7/2439
+#246     0.91s best:1031829 next:[-8123974,1031828] no_lp fixed_bools:7/2441
+#Bound   0.92s best:1031829 next:[-7827253,1031828] reduced_costs
+#Bound   0.95s best:1031829 next:[-7661435,1031828] reduced_costs
+#Bound   0.96s best:1031829 next:[-7514399,1031828] reduced_costs
+#Bound   1.08s best:1031829 next:[-7177635,1031828] no_lp
+#Bound   1.08s best:1031829 next:[-7026786,1031828] no_lp
+#Bound   1.11s best:1031829 next:[-6876230,1031828] default_lp
+#Bound   1.12s best:1031829 next:[-6576542,1031828] reduced_costs
+#Bound   1.21s best:1031829 next:[-6392196,1031828] reduced_costs
+#247     1.22s best:1029702 next:[-6392196,1029701] default_lp fixed_bools:72/1568
+#248     1.23s best:1012593 next:[-6392196,1012592] default_lp fixed_bools:72/1568
+#249     1.23s best:992976 next:[-6392196,992975] default_lp fixed_bools:72/1568
+#250     1.23s best:980196 next:[-6392196,980195] default_lp fixed_bools:72/1570
+#Bound   1.25s best:980196 next:[-6189010,980195] reduced_costs
+#Bound   1.26s best:980196 next:[-6097746,980195] reduced_costs
+#Bound   1.27s best:980196 next:[-5953980,980195] reduced_costs
+#Bound   1.27s best:980196 next:[-5876737,980195] reduced_costs
+#Bound   1.31s best:980196 next:[-5654524,980195] reduced_costs
+#Bound   1.40s best:980196 next:[-5628809,980195] max_lp
+#Bound   1.41s best:980196 next:[-5505229,980195] max_lp
+#Bound   1.42s best:980196 next:[-5431527,980195] max_lp
+#Bound   1.61s best:980196 next:[-5290408,980195] max_lp
+#Bound   1.62s best:980196 next:[-5257176,980195] max_lp
+#Bound   1.80s best:980196 next:[-5053962,980195] pseudo_costs
+#Bound   1.84s best:980196 next:[-4830469,980195] reduced_costs
+#Bound   1.85s best:980196 next:[-4624202,980195] reduced_costs
+#Bound   2.14s best:980196 next:[-4560942,980195] pseudo_costs
+#Bound   2.16s best:980196 next:[-4409649,980195] reduced_costs
+#Bound   2.18s best:980196 next:[-4203685,980195] reduced_costs
+#Bound   2.19s best:980196 next:[-4123656,980195] reduced_costs
+#Bound   2.33s best:980196 next:[-4026727,980195] reduced_costs
+#Bound   2.34s best:980196 next:[-3980480,980195] reduced_costs
+#Bound   2.35s best:980196 next:[-3934364,980195] reduced_costs
+#Bound   2.49s best:980196 next:[-3412049,980195] reduced_costs
+#Bound   2.57s best:980196 next:[-727096,980195] reduced_costs
+#Bound   2.59s best:980196 next:[-720740,980195] reduced_costs
+#Done    2.60s no_lp
+#Done    2.60s core
+
+Task timing                        n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
+  'synchronization_agent':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+    'neighborhood_helper':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+             'default_lp':         1 [   2.54s,    2.54s]    2.54s   0.00ns    2.54s         1 [995.49ms, 995.49ms] 995.49ms   0.00ns 995.49ms
+                  'no_lp':         1 [   2.54s,    2.54s]    2.54s   0.00ns    2.54s         1 [   1.90s,    1.90s]    1.90s   0.00ns    1.90s
+                 'max_lp':         1 [   2.54s,    2.54s]    2.54s   0.00ns    2.54s         1 [609.23ms, 609.23ms] 609.23ms   0.00ns 609.23ms
+                   'core':         1 [   2.54s,    2.54s]    2.54s   0.00ns    2.54s         1 [299.05ms, 299.05ms] 299.05ms   0.00ns 299.05ms
+          'reduced_costs':         1 [   2.55s,    2.55s]    2.55s   0.00ns    2.55s         1 [557.37ms, 557.37ms] 557.37ms   0.00ns 557.37ms
+           'pseudo_costs':         1 [   2.54s,    2.54s]    2.54s   0.00ns    2.54s         1 [607.19ms, 607.19ms] 607.19ms   0.00ns 607.19ms
+       'feasibility_pump':         7 [ 49.59us, 956.86us] 204.55us 311.51us   1.43ms         6 [  4.51us,  12.22us]   5.80us   2.87us  34.78us
+              'rins/rens':         7 [ 92.78us, 607.64ms] 231.37ms 260.37ms    1.62s         4 [  1.55ms, 100.06ms]  75.41ms  42.64ms 301.62ms
+            'rnd_var_lns':         7 [  5.99ms, 179.37ms]  69.48ms  53.45ms 486.33ms         6 [ 29.32us,  19.94ms]   4.88ms   7.29ms  29.29ms
+            'rnd_cst_lns':         6 [  4.92ms, 134.33ms]  52.54ms  44.78ms 315.25ms         6 [  1.00ns,  19.43ms]   3.88ms   7.02ms  23.29ms
+          'graph_var_lns':         6 [ 28.66ms, 557.32ms] 252.30ms 209.46ms    1.51s         6 [211.28us, 100.01ms]  39.53ms  42.58ms 237.20ms
+          'graph_arc_lns':         6 [ 12.55ms, 389.41ms]  87.24ms 135.43ms 523.44ms         6 [  2.85us, 100.02ms]  16.73ms  37.25ms 100.37ms
+          'graph_cst_lns':         6 [  1.10ms,  93.22ms]  31.85ms  30.03ms 191.13ms         5 [  8.22us,   6.39ms]   1.53ms   2.46ms   7.67ms
+          'graph_dec_lns':         6 [  1.44ms, 211.87ms]  68.57ms  73.32ms 411.42ms         5 [  4.31us,  36.09ms]   9.75ms  13.94ms  48.73ms
+    'update_gap_integral':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+
+Search stats        Bools  Conflicts   Branches  Restarts  BoolPropag  IntegerPropag
+     'default_lp':  1'831     17'177     38'196       326   5'050'305      1'250'151
+          'no_lp':  3'171     30'830    105'207       509  15'083'517      2'485'283
+         'max_lp':  2'502      4'328      8'804       135     749'059        536'745
+           'core':     67         19  1'095'571    48'517   1'872'411      3'873'154
+  'reduced_costs':  1'453      3'509     10'348       178     355'059        199'988
+   'pseudo_costs':    387      2'171      5'727       145      95'605        130'133
+
+LNS stats           Improv/Calls  Closed  Difficulty  TimeLimit
+      'rins/rens':           1/6     50%        0.63       0.10
+    'rnd_var_lns':           2/7     86%        0.94       0.10
+    'rnd_cst_lns':           0/6    100%        0.96       0.10
+  'graph_var_lns':           3/6     83%        0.90       0.10
+  'graph_arc_lns':           0/6     83%        0.92       0.10
+  'graph_cst_lns':           2/5    100%        0.94       0.10
+  'graph_dec_lns':           0/6     83%        0.92       0.10
+
+Solutions (250)     Num      Rank
+     'default_lp':   26  [12,250]
+  'graph_var_lns':    1   [77,77]
+          'no_lp':  222   [1,246]
+    'rnd_var_lns':    1   [94,94]
+
+Objective bounds     Num
+      'default_lp':    3
+  'initial_domain':    1
+          'max_lp':    9
+           'no_lp':    3
+    'pseudo_costs':   12
+   'reduced_costs':   46
+
+Solution repositories    Added  Queried  Ignored  Synchro
+  'feasible solutions':    361       90        0      272
+        'lp solutions':    228        4        9       38
+                'pump':      6        3
+
+Improving bounds shared    Num
+                  'core':    9
+            'default_lp':  178
+                'max_lp':    9
+                 'no_lp':  105
+          'pseudo_costs':   38
+         'reduced_costs':   42
+
+Clauses shared      Num
+           'core':    3
+     'default_lp':   14
+         'max_lp':    7
+          'no_lp':    6
+  'reduced_costs':    5
+
+CpSolverResponse summary:
+status: OPTIMAL
+objective: 980196
+best_bound: 980196
+integers: 42
+booleans: 1831
+conflicts: 17177
+branches: 38196
+propagations: 5050305
+integer_propagations: 1250151
+restarts: 326
+lp_iterations: 33495
+walltime: 2.60719
+usertime: 2.60719
+deterministic_time: 5.71711
+gap_integral: 40.5296
+solution_fingerprint: 0x6ca6e3275b98651c
+

@@ -1,0 +1,8 @@
+# Configuration settings and constants
+
+INITIAL_CANVAS_WIDTH = 8000
+INITIAL_CANVAS_HEIGHT = 8000
+BASE_ALPHA_MIN = 80
+BASE_ALPHA_MAX = 150
+
+
