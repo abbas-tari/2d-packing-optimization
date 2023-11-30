@@ -72,7 +72,10 @@ If you don't have PDM installed, run:
 
 ```bash
 python3 -m pip install --user pdm
+```
 
+Then:
+```
 git clone https://github.com/abbas-tari/2d-packing-optimization.git
 
 cd 2d-packing-optimization
