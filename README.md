@@ -1,7 +1,7 @@
 # Project Title
 
 ## Description
-Provide a brief description of your project here.
+
 
 ## Installation and Setup
 ### Prerequisites
@@ -14,9 +14,9 @@ If you don't have PDM installed, run:
 ```bash
 python3 -m pip install --user pdm
 
-git clone [Your Repository URL]
+git clone https://github.com/abbas-tari/2d-packing-optimization.git
 
-cd [Your Project Directory]
+cd 2d-packing-optimization
 
 pdm install
 pdm run python main.py
